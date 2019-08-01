@@ -19,7 +19,6 @@ public class vmRunable implements Runnable {
 		try {
 				while (StateThread) {
 					synchronized (new Object()) {
-						//addTolist.GetMesAddtolist(getListModelInput(), "Run Thread");
 						CreateMessageVM.Createid(getListModelInput(),getNameVM());
 						Thread.sleep(1500);
 						++Counter;
