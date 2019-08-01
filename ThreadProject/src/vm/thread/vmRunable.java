@@ -29,7 +29,7 @@ public class vmRunable implements Runnable {
 
 				}
 			} catch (Exception e) {
-				vmThread.currentThread().interrupt();
+				Thread.currentThread().interrupt();
 				CreateMessageVM.Createid(getListModelInput(), getNameVM());
 			}
 
