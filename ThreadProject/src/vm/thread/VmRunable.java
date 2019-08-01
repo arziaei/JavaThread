@@ -3,7 +3,7 @@ import javax.swing.DefaultListModel;
 
 import vm.message.CreateMessageVM;
 
-public class vmRunable implements Runnable {
+public class VmRunable implements Runnable {
 	
 	private DefaultListModel<String> listModelInput;
 	private String NameVM;
@@ -11,7 +11,7 @@ public class vmRunable implements Runnable {
 	private int Counter=1;
 	
 	
-	public vmRunable(DefaultListModel<String> listModelInput, String nameVM) {
+	public VmRunable(DefaultListModel<String> listModelInput, String nameVM) {
 		super();
 		this.listModelInput = listModelInput;
 		NameVM = nameVM;

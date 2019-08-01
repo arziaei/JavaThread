@@ -6,9 +6,9 @@ import javax.swing.DefaultListModel;
 import javax.swing.JButton;
 import javax.swing.JRadioButton;
 
-import vm.thread.vmRunable;
+import vm.thread.VmRunable;
 
-public class actionPerformed {
+public class ActionPerformed {
 
 	JRadioButton Rb;
 	DefaultListModel<String> ListModelInput;
@@ -16,7 +16,7 @@ public class actionPerformed {
 	JButton B;
 
 	public static void radioButtonStopmode(JRadioButton rb, DefaultListModel<String> listModelInput,
-			vmRunable runvm) {
+			VmRunable runvm) {
 		rb.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				if (rb.isSelected()) {
@@ -30,7 +30,7 @@ public class actionPerformed {
 	}
 	
 	public static void radioButtonStartmode(JRadioButton rb, DefaultListModel<String> listModelInput,
-			vmRunable runvm) {
+			VmRunable runvm) {
 		rb.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				if (rb.isSelected()) {
@@ -43,8 +43,8 @@ public class actionPerformed {
 		});
 	}
 
-	public static vmRunable SetactionPerformedbutton(JButton b, DefaultListModel<String> listModelInput, String NameVM) {
-		final vmRunable runvm = new vmRunable(listModelInput, NameVM);
+	public static VmRunable SetactionPerformedbutton(JButton b, DefaultListModel<String> listModelInput, String NameVM) {
+		final VmRunable runvm = new VmRunable(listModelInput, NameVM);
 
 		b.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {

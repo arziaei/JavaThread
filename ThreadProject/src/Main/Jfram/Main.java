@@ -16,8 +16,8 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.ListView;
 import vm.message.SetgroupRB;
-import vm.message.actionPerformed;
-import vm.thread.vmRunable;
+import vm.message.ActionPerformed;
+import vm.thread.VmRunable;
 
 import javax.swing.event.ChangeEvent;
 import javax.swing.JRadioButton;
@@ -79,19 +79,19 @@ public class Main extends JFrame {
 		contentPane.add(panelVM1);
 		
 		JButton buttonVM1 = new JButton("VM 1");
-		vmRunable runvm1 = actionPerformed.SetactionPerformedbutton(buttonVM1,listModel,"VM1(Run manually)");
+		VmRunable runvm1 = ActionPerformed.SetactionPerformedbutton(buttonVM1,listModel,"VM1(Run manually)");
 		buttonVM1.setVerticalAlignment(SwingConstants.TOP);
 		panelVM1.add(buttonVM1);
 		
 		JRadioButton rdbtnStartVM1 = new JRadioButton("Start");
 		rdbtnStartVM1.setName("rdbtnStartVM1");
-		actionPerformed.radioButtonStartmode(rdbtnStartVM1,listModel, runvm1);
+		ActionPerformed.radioButtonStartmode(rdbtnStartVM1,listModel, runvm1);
 		rdbtnStartVM1.setMnemonic('T');
 		panelVM1.add(rdbtnStartVM1);
 		
 		JRadioButton rdbtnStopVM1 = new JRadioButton("Stop");
 		rdbtnStopVM1.setName("rdbtn_StopVM1");
-		actionPerformed.radioButtonStopmode(rdbtnStopVM1,listModel ,runvm1);
+		ActionPerformed.radioButtonStopmode(rdbtnStopVM1,listModel ,runvm1);
 		rdbtnStopVM1.setMnemonic('S');
 		
 		rdbtnStopVM1.setSelected(true);
@@ -104,19 +104,19 @@ public class Main extends JFrame {
 		contentPane.add(panelVM2);
 		
 		JButton buttonVM2 = new JButton("VM 2");
-		vmRunable runvm2 = actionPerformed.SetactionPerformedbutton(buttonVM2,listModel,"VM2(Run manually)");
-		actionPerformed.SetactionPerformedbutton(buttonVM2,listModel,"VM2");
+		VmRunable runvm2 = ActionPerformed.SetactionPerformedbutton(buttonVM2,listModel,"VM2(Run manually)");
+		ActionPerformed.SetactionPerformedbutton(buttonVM2,listModel,"VM2");
 		buttonVM2.setVerticalAlignment(SwingConstants.TOP);
 		panelVM2.add(buttonVM2);
 		
 		JRadioButton rdbtnStartVM2 = new JRadioButton("Start");
 		rdbtnStartVM2.setName("rdbtnStartVM2");
-		actionPerformed.radioButtonStartmode(rdbtnStartVM2,listModel,runvm2);
+		ActionPerformed.radioButtonStartmode(rdbtnStartVM2,listModel,runvm2);
 		panelVM2.add(rdbtnStartVM2);
 		
 		JRadioButton rdbtnStopVM2 = new JRadioButton("Stop");
 		rdbtnStopVM2.setName("rdbtn_StopVM2");
-		actionPerformed.radioButtonStopmode(rdbtnStopVM2,listModel,runvm2);
+		ActionPerformed.radioButtonStopmode(rdbtnStopVM2,listModel,runvm2);
 		rdbtnStopVM2.setSelected(true);
 		panelVM2.add(rdbtnStopVM2);
 		
@@ -127,19 +127,19 @@ public class Main extends JFrame {
 		contentPane.add(panelVM3);
 		
 		JButton buttonVM3 = new JButton("VM 3");
-		vmRunable runvm3 = actionPerformed.SetactionPerformedbutton(buttonVM3,listModel,"VM3(Run manually)");
-		actionPerformed.SetactionPerformedbutton(buttonVM3,listModel,"VM3");
+		VmRunable runvm3 = ActionPerformed.SetactionPerformedbutton(buttonVM3,listModel,"VM3(Run manually)");
+		ActionPerformed.SetactionPerformedbutton(buttonVM3,listModel,"VM3");
 		buttonVM3.setVerticalAlignment(SwingConstants.TOP);
 		panelVM3.add(buttonVM3);
 		
 		JRadioButton rdbtnStartVM3 = new JRadioButton("Start");
 		rdbtnStartVM3.setName("rdbtnStartVM3");
-		actionPerformed.radioButtonStartmode(rdbtnStartVM3,listModel,runvm3);
+		ActionPerformed.radioButtonStartmode(rdbtnStartVM3,listModel,runvm3);
 		panelVM3.add(rdbtnStartVM3);
 		
 		JRadioButton rdbtnStopVM3 = new JRadioButton("Stop");
 		rdbtnStopVM3.setName("rdbtn_StopVM3");
-		actionPerformed.radioButtonStopmode(rdbtnStopVM3,listModel,runvm3);
+		ActionPerformed.radioButtonStopmode(rdbtnStopVM3,listModel,runvm3);
 		rdbtnStopVM3.setMnemonic('S');
 		
 		rdbtnStopVM3.setSelected(true);
@@ -152,19 +152,19 @@ public class Main extends JFrame {
 		contentPane.add(panelVM4);
 		
 		JButton buttonVM4 = new JButton("VM 4");
-		vmRunable runvm4 = actionPerformed.SetactionPerformedbutton(buttonVM4,listModel,"VM4(Run manually)");
-		actionPerformed.SetactionPerformedbutton(buttonVM4,listModel,"VM4");
+		VmRunable runvm4 = ActionPerformed.SetactionPerformedbutton(buttonVM4,listModel,"VM4(Run manually)");
+		ActionPerformed.SetactionPerformedbutton(buttonVM4,listModel,"VM4");
 		buttonVM4.setVerticalAlignment(SwingConstants.TOP);
 		panelVM4.add(buttonVM4);
 		
 		JRadioButton rdbtnStartVM4 = new JRadioButton("Start");
 		rdbtnStartVM4.setName("rdbtnStartVM4");
-		actionPerformed.radioButtonStartmode(rdbtnStartVM4,listModel,runvm4);
+		ActionPerformed.radioButtonStartmode(rdbtnStartVM4,listModel,runvm4);
 		panelVM4.add(rdbtnStartVM4);
 		
 		JRadioButton rdbtnStopVM4 = new JRadioButton("Stop");
 		rdbtnStopVM4.setName("rdbtn_StopVM4");
-		actionPerformed.radioButtonStopmode(rdbtnStopVM4,listModel,runvm4);
+		ActionPerformed.radioButtonStopmode(rdbtnStopVM4,listModel,runvm4);
 		rdbtnStopVM4.setMnemonic('S');
 		
 		rdbtnStopVM4.setSelected(true);
@@ -177,19 +177,19 @@ public class Main extends JFrame {
 		contentPane.add(panelVM5);
 		
 		JButton buttonVM5 = new JButton("VM 5");
-		vmRunable runvm5 = actionPerformed.SetactionPerformedbutton(buttonVM5,listModel,"VM5(Run manually)");
-		actionPerformed.SetactionPerformedbutton(buttonVM5,listModel,"VM5");
+		VmRunable runvm5 = ActionPerformed.SetactionPerformedbutton(buttonVM5,listModel,"VM5(Run manually)");
+		ActionPerformed.SetactionPerformedbutton(buttonVM5,listModel,"VM5");
 		buttonVM5.setVerticalAlignment(SwingConstants.TOP);
 		panelVM5.add(buttonVM5);
 		
 		JRadioButton rdbtnStartVM5 = new JRadioButton("Start");
 		rdbtnStartVM5.setName("rdbtnStartVM5");
-		actionPerformed.radioButtonStartmode(rdbtnStartVM5,listModel,runvm5);
+		ActionPerformed.radioButtonStartmode(rdbtnStartVM5,listModel,runvm5);
 		panelVM5.add(rdbtnStartVM5);
 		
 		JRadioButton rdbtnStopVM5 = new JRadioButton("Stop");
 		rdbtnStopVM5.setName("rdbtn_StopVM5");
-		actionPerformed.radioButtonStopmode(rdbtnStopVM5,listModel,runvm5);
+		ActionPerformed.radioButtonStopmode(rdbtnStopVM5,listModel,runvm5);
 		rdbtnStopVM5.setMnemonic('S');
 		
 		rdbtnStopVM5.setSelected(true);
