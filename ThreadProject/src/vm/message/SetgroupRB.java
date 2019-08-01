@@ -1,3 +1,4 @@
+package vm.message;
 import javax.swing.ButtonGroup;
 import javax.swing.JRadioButton;
 

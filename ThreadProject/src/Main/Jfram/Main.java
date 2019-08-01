@@ -1,3 +1,4 @@
+package Main.Jfram;
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
@@ -14,6 +15,9 @@ import javax.swing.event.ChangeListener;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.ListView;
+import vm.message.SetgroupRB;
+import vm.message.actionPerformed;
+import vm.thread.vmRunable;
 
 import javax.swing.event.ChangeEvent;
 import javax.swing.JRadioButton;

@@ -1,3 +1,4 @@
+package vm.message;
 import javax.swing.DefaultListModel;
 
 public class addTolist {

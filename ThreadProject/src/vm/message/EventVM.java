@@ -1,3 +1,4 @@
+package vm.message;
 
 public enum EventVM {
 	Mes1(100,"ErrorVM","The power of the machine is disconnected"),

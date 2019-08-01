@@ -1,3 +1,4 @@
+package vm.message;
 import java.util.EnumSet;
 import java.util.Random;
 

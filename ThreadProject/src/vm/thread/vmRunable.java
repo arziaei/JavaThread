@@ -1,4 +1,7 @@
+package vm.thread;
 import javax.swing.DefaultListModel;
+
+import vm.message.CreateMessageVM;
 
 public class vmRunable implements Runnable {
 	
@@ -68,7 +71,4 @@ public class vmRunable implements Runnable {
 	public void setCounter(int counter) {
 		Counter = counter;
 	}
-	
-	
-
 }
